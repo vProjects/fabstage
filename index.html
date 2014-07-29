@@ -76,27 +76,91 @@
 				<h3 class="head-bd">lorem ipsum lorem</h3>
 				<div class="brdr-head"><img src="images/brdr-heads.png" class="img-responsive" /></div>
 				<div class="middle-lnk mrgn-btm">
-					<div class="lnk-bd-container">
-						<a href="#">Talent</a>
-						<a href="#">Companies &amp; Agencies</a>
-						<a href="#">Jobs</a>
-						<a href="#">Auditions</a>
-					</div>
-					<form class="form-inline" role="form">
-					  <div class="form-group">
-					    <div class="input-group">
-					      <input class="form-control form-custom-need" type="text" placeholder="Who do you need?">
-					    </div>
+					<!-- Nav tabs -->
+					<ul class="nav nav-pills nav-pills-custom" role="tablist">
+					  <li class="active"><a href="#talent" role="tab" data-toggle="tab">Talent</a></li>
+					  <li><a href="#company" role="tab" data-toggle="tab">Company / Agencies</a></li>
+					  <li><a href="#jobs" role="tab" data-toggle="tab">Jobs</a></li>
+					  <li><a href="#auditions" role="tab" data-toggle="tab">Auditions</a></li>
+					</ul>
+					
+					<!-- Tab panes -->
+					<div class="tab-content">
+						
+					  <div class="tab-pane fade in active" id="talent">
+					  	<form class="form-inline" role="form">
+						  <div class="form-group">
+						    <div class="input-group">
+						      <input class="form-control form-custom-need" type="text" placeholder="Who do you need?">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    in
+						  </div>
+						  <div class="form-group">
+						    <div class="input-group">
+						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
+						    </div>
+						  </div>
+						</form>
 					  </div>
-					  <div class="form-group">
-					    in
+					  
+					  <div class="tab-pane fade" id="company">
+					  	<form class="form-inline" role="form">
+						  <div class="form-group">
+						    <div class="input-group">
+						      <input class="form-control form-custom-need" type="text" placeholder="Who do you need?">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    in
+						  </div>
+						  <div class="form-group">
+						    <div class="input-group">
+						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
+						    </div>
+						  </div>
+						</form>
 					  </div>
-					  <div class="form-group">
-					    <div class="input-group">
-					      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
-					    </div>
+					  
+					  <div class="tab-pane fade" id="jobs">
+					  	<form class="form-inline" role="form">
+						  <div class="form-group">
+						    <div class="input-group">
+						      <input class="form-control form-custom-need" type="text" placeholder="Who do you need?">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    in
+						  </div>
+						  <div class="form-group">
+						    <div class="input-group">
+						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
+						    </div>
+						  </div>
+						</form>
 					  </div>
-					</form>
+					  
+					  <div class="tab-pane fade" id="auditions">
+					  	<form class="form-inline" role="form">
+						  <div class="form-group">
+						    <div class="input-group">
+						      <input class="form-control form-custom-need" type="text" placeholder="Who do you need?">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    in
+						  </div>
+						  <div class="form-group">
+						    <div class="input-group">
+						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
+						    </div>
+						  </div>
+						</form>
+					  </div>
+					  
+					</div><!-- tab-content -->
+					
 				</div><!-- middle-lnk -->
 				<div class="clearfix"></div>
 			</div><!-- container -->
@@ -227,6 +291,34 @@
 					</div>
 				</div><!-- row -->
 			</div><!-- container -->
+		</section>
+		
+		<section class="div-arrow-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<a href="#" class="ar frst-ar">
+							<h3>SUBMIT PORTFOLIO</h3>
+							<div class="brdr-side"></div><div class="para-txt">To Get Hired</div><div class="brdr-side"></div>
+							<div class="clearfix"></div>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#" class="ar scnd-ar">
+							<h3>POST JOB</h3>
+							<div class="brdr-side"></div><div class="para-txt">Auditions / Contests</div><div class="brdr-side"></div>
+							<div class="clearfix"></div>
+						</a>
+					</div>
+					<div class="col-sm-4">
+						<a href="#" class="ar thrd-ar">
+							<h3>HIRE TALENT</h3>
+							<div class="brdr-side"></div><div class="para-txt">As Client Visitors</div><div class="brdr-side"></div>
+							<div class="clearfix"></div>
+						</a>
+					</div>
+				</div>
+			</div>
 		</section>
 		
 		<section class="jb-aud">
@@ -454,14 +546,39 @@
 			</div><!-- container -->
 		</section>
 		
-		<footer class="footer">
+		<footer>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-2">
 						<p class="copyright">Copyright xyz</p>
 					</div>
+					<div class="col-sm-3">
+						<form role="form">
+							<div class="input-group input-group-custom">
+								<input class="form-control form-custom" type="text" placeholder="Newsletter" />
+								<span class="input-group-addon custom-addon"><button class="btn btn-link">GO!</button></span>
+							</div>
+						</form>
+					</div>
+					<div class="col-sm-5">
+						<div class="nav-footer">
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+					</div>
 					<div class="col-sm-2">
-						<a href="#" class="btn-4 btn-4a btn-custom  icon-arrow-right">Newsletter</a>
+						<div class="social">
+							<a href="#"><img src="images/facebook.png" /></a>
+							<a href="#"><img src="images/google.png" /></a>
+							<a href="#"><img src="images/linkedin.png" /></a>
+							<a href="#"><img src="images/twitter.png" /></a>
+						</div>
 					</div>
 				</div>
 			</div>
