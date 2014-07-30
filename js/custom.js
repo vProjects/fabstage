@@ -12,5 +12,7 @@ $(document).ready(function(){
 	$(".img-flip").hover(function(){
 		$(this).children('.txt-flip').slideToggle("slow");
 	});
-
+	
+	skrollr.init();
+	
 });

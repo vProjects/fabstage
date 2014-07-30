@@ -137,7 +137,7 @@
  */
 
 video#bgvid {
-	position: fixed; 
+	position: fixed;
 	right: 0; 
 	top: 0;
 	min-width: 100%; 
@@ -145,8 +145,15 @@ video#bgvid {
 	width: auto; 
 	height: auto; 
 	z-index: -100;
-	background: url(../images/polina.jpg) no-repeat;
+	background: url(../images/polina.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .play-btn{
@@ -311,6 +318,7 @@ video#bgvid {
 
 .bd-scnd{
 	background-color: #FFFFFF;
+	padding-bottom: 80px;
 }
 
 .mrgn-tp{
@@ -326,24 +334,28 @@ video#bgvid {
 }
 
 .blur-img{
-	background: url(../images/testimonial-background.jpg) no-repeat;
+	background: url(../images/blur2.jpg);
 	padding-bottom: 25px;
 	width: 100%;
 	z-index:999;
-	height: 100%;
+	min-height: 700px;
 	display: table;
 	position: relative;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .blur-hd{
 	font-family: bondoluopeek;
 	color: #ffffff;
 	margin-top: 0;
-	padding-top: 30px;
+	padding-top: 100px;
 	padding-bottom: 15px;
 }
 
@@ -434,17 +446,21 @@ video#bgvid {
 }
 
 .jb-aud{
-	background: url(../images/testimonial-background.jpg);
+	background: url(../images/blur1.jpg);
 	padding-bottom: 25px;
 	width: 100%;
 	z-index:999;
-	height: 100%;
+	min-height: 700px;
 	display: table;
 	position: relative;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .jb-view{
@@ -471,24 +487,27 @@ video#bgvid {
 	bottom: 0  !important;
 	/* left: 0 !important; */
 	z-index: 15;
-	width: 15%;
+	width: 5%;
 	padding-left: 0;
 	/* margin-left: -30%; */
 	text-align: center;
 	list-style: none;
 	height: 35px;
-	top: 95%;
+	top: 100%;
 	background-image: none !important;
+	opacity: 1;
 }
 
 .lt-carousel{
     background-image: none !important;
     background-repeat: no-repeat !important;
+    left: 45%;
 }
 
 .rt-carousel{
     background: none;
 	background-image: none !important;
+    right: 45% !important;
 }
 
 .recruiter{
@@ -541,7 +560,7 @@ video#bgvid {
 	text-align: center;
 	margin: 20px auto;
 	height: 45px;
-	line-height: 35px;
+	line-height: 43px;
 	position: relative;
 	width: 150px;
 	background-color: #E74C3C;
