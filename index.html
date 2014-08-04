@@ -34,7 +34,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Your Logo</a>
+		      <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-logo" /></a>
 		    </div>
 		
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,34 +44,68 @@
 		        <li><a href="#">Hire Talent</a></li>
 		        <li><a href="#">Companies &amp; Agencies</a></li>
 		        <li><a href="#">Job</a></li>
-		        <li><a href="#">Categories</a></li>
-		        <li><a href="#" data-hover="Sign up" class="btn-sign-log"><span>Sign up</span></a></li>
-		        <li><a href="#" data-hover="Log in" class="btn-sign-log"><span>Log in</span></a></li>
+		        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+		        	<ul class="dropdown-menu" role="menu">
+			            <li><a href="#">Action</a></li>
+			            <li><a href="#">Another action</a></li>
+			            <li><a href="#">Something else here</a></li>
+			            <li class="divider"></li>
+			            <li><a href="#">Separated link</a></li>
+			            <li class="divider"></li>
+			            <li><a href="#">One more separated link</a></li>
+			          </ul>
+		        </li>
+		        <li class="pad-sign"><a href="#" data-hover="Sign up" class="btn-sign-log"><span>Sign up</span></a></li>
+		        <li class="pad-sign"><a href="#" data-hover="Log in" class="btn-sign-log" data-toggle="modal" data-target="#myModal"><span>Log in</span></a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container -->
 		</nav>
+		<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					      </div>
+					      <div class="modal-body">
+					        <form role="form" class="form-horizontal">
+					        	<div class="form-group">
+								    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+								    <div class="col-sm-10">
+								      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+								    <div class="col-sm-10">
+								      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+								    </div>
+								  </div>
+					        </form>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-primary">Save changes</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 		
-		<video autoplay loop poster="images/polina.jpg" id="bgvid" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#bgvid">
-			<source src="videos/polina.webm" type="video/webm">
-			<source src="videos/polina.mp4" type="video/mp4">
-		</video>
-		
-		<section class="banner" id="banner" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#banner">
-			<a href="#" class="play-btn">
-				<img src="images/play-btn.png" class="img-responsive" />
-			</a>
+		<section class="banner">
 			
 			<h3 class="head-banner">Find talent , agencies or jobs</h3>
 			<div class="brdr-banner">
 				<img src="images/brdr-banner.jpg" class="img-responsive" />
 			</div>
 			<p class="para-banner">Hire Professionals and Find jobs and auditions in Entertainment &amp; Glamoure world hire</p>
+			<div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
 		</section>
 		
 		<!-- first link and input section -->
 		
-		<section class="bd-frst" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#bgvid">
+		<section class="bd-frst">
 			<div class="container">
 				<h3 class="head-bd">lorem ipsum lorem</h3>
 				<div class="brdr-head"><img src="images/brdr-heads.png" class="img-responsive" /></div>
@@ -102,6 +136,9 @@
 						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
 						    </div>
 						  </div>
+						  <div class="fl-wid mrgn-tp">
+						  	<div class="btn-custom-div"><button class="btn btn-default"><img src="images/searchicon.png" /></button></div>
+						  </div>
 						</form>
 					  </div>
 					  
@@ -119,6 +156,9 @@
 						    <div class="input-group">
 						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
 						    </div>
+						  </div>
+						  <div class="fl-wid mrgn-tp">
+						  	<div class="btn-custom-div"><button class="btn btn-default"><img src="images/searchicon.png" /></button></div>
 						  </div>
 						</form>
 					  </div>
@@ -138,6 +178,9 @@
 						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
 						    </div>
 						  </div>
+						  <div class="fl-wid mrgn-tp">
+						  	<div class="btn-custom-div"><button class="btn btn-default"><img src="images/searchicon.png" /></button></div>
+						  </div>
 						</form>
 					  </div>
 					  
@@ -156,6 +199,9 @@
 						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
 						    </div>
 						  </div>
+						  <div class="fl-wid mrgn-tp">
+						  	<div class="btn-custom-div"><button class="btn btn-default"><img src="images/searchicon.png" /></button></div>
+						  </div>
 						</form>
 					  </div>
 					  
@@ -169,78 +215,172 @@
 		<!-- image zoom section -->
 		
 		<section class="bd-scnd">
-			<div class="container">
+			
 				<h3 class="head-bd">lorem ipsum lorem</h3>
 				<div class="brdr-head"><img src="images/brdr-heads.png" class="img-responsive" /></div>
-				<div class="row mrgn-tp mrgn-btm">
-					<div class="col-sm-3">
-						<div class="effctimg">
-							<img src="images/girl-1.jpg" class="fl-wid" />
-							<div class="txt-container">
-								<p>Agencies &amp; Services</p>
+				
+				<div id="carousel-example-3rd" class="carousel slide" data-ride="carousel">
+				  
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+				    	<div class="container">
+				      <div class="row mrgn-tp mrgn-btm">
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
-						<div class="effctimg">
-							<img src="images/girl-1.jpg" class="fl-wid" />
-							<div class="txt-container">
-								<p>Agencies &amp; Services</p>
+					<div class="row mrgn-tp mrgn-btm">
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+					</div><!-- row ends -->
+					<div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
+					</div>
+				    </div>
+				    <div class="item">
+				    	<div class="container">
+				      <div class="row mrgn-tp mrgn-btm">
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3">
-						<div class="effctimg">
-							<img src="images/girl-1.jpg" class="fl-wid" />
-							<div class="txt-container">
-								<p>Agencies &amp; Services</p>
+					<div class="row mrgn-tp mrgn-btm">
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="effctimg">
-							<img src="images/girl-1.jpg" class="fl-wid" />
-							<div class="txt-container">
-								<p>Agencies &amp; Services</p>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
 							</div>
 						</div>
-					</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="effctimg img-circle">
+								<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+								<div class="txt-container">
+									<p>Agencies &amp; Services</p>
+								</div>
+							</div>
+						</div>
+					</div><!-- row ends -->
+					<div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
+					</div><!-- container -->
+				    </div>
+				  </div>
+				
+				 <!-- Controls -->
+				  <a class="left carousel-control control-recruiter" href="#carousel-example-3rd" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left"><img src="images/carousel-left.png" class="img-responsive" /></span>
+				  </a>
+				  <a class="right carousel-control control-recruiter" href="#carousel-example-3rd" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right"><img src="images/carousel-right.png" class="img-responsive" /></span>
+				  </a>
 				</div>
-				<div class="row mrgn-tp mrgn-btm">
-					<div class="col-sm-3">
-						<div class="effctimg">
-							<img src="images/girl-1.jpg" class="fl-wid" />
-							<div class="txt-container">
-								<p>Agencies &amp; Services</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="effctimg">
-							<img src="images/girl-1.jpg" class="fl-wid" />
-							<div class="txt-container">
-								<p>Agencies &amp; Services</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="effctimg">
-							<img src="images/girl-1.jpg" class="fl-wid" />
-							<div class="txt-container">
-								<p>Agencies &amp; Services</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="effctimg">
-							<img src="images/girl-1.jpg" class="fl-wid" />
-							<div class="txt-container">
-								<p>Agencies &amp; Services</p>
-							</div>
-						</div>
-					</div>
-				</div><!-- row ends -->
-			</div><!-- container -->
+				
+			
 		</section>
 		
 		<!-- flip img section -->
@@ -253,7 +393,8 @@
 						<div class="img-flip">
 							<img src="images/testimonial-girl.jpg" class="fl-wid" />
 							<div class="txt-flip">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 							</div><!-- txt-flip ends -->
 						</div>
 					</div>
@@ -261,7 +402,8 @@
 						<div class="img-flip">
 							<img src="images/testimonial-girl.jpg" class="fl-wid" />
 							<div class="txt-flip">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 							</div><!-- txt-flip ends -->
 						</div>
 					</div>
@@ -269,7 +411,8 @@
 						<div class="img-flip">
 							<img src="images/testimonial-girl.jpg" class="fl-wid" />
 							<div class="txt-flip">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 							</div><!-- txt-flip ends -->
 						</div>
 					</div>
@@ -333,8 +476,8 @@
 				      
 								<div class="row mrgn-tp mrgn-btm">
 									<div class="col-sm-3">
-										<div class="effctimg">
-											<img src="images/girl-1.jpg" class="fl-wid" />
+										<div class="effctimg img-circle">
+											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -342,8 +485,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg">
-											<img src="images/girl-1.jpg" class="fl-wid" />
+										<div class="effctimg img-circle">
+											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -351,8 +494,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg">
-											<img src="images/girl-1.jpg" class="fl-wid" />
+										<div class="effctimg img-circle">
+											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -360,8 +503,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg">
-											<img src="images/girl-1.jpg" class="fl-wid" />
+										<div class="effctimg img-circle">
+											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -375,8 +518,8 @@
 				     
 								<div class="row mrgn-tp mrgn-btm">
 									<div class="col-sm-3">
-										<div class="effctimg">
-											<img src="images/girl-1.jpg" class="fl-wid" />
+										<div class="effctimg img-circle">
+											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -384,8 +527,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg">
-											<img src="images/girl-1.jpg" class="fl-wid" />
+										<div class="effctimg img-circle">
+											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -393,8 +536,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg">
-											<img src="images/girl-1.jpg" class="fl-wid" />
+										<div class="effctimg img-circle">
+											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -402,8 +545,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg">
-											<img src="images/girl-1.jpg" class="fl-wid" />
+										<div class="effctimg img-circle">
+											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -463,84 +606,86 @@
 		
 		<section class="recruiter">
 			<div class="container">
-				<h1 class="recruiter-hd">Latest Talent</h1>
-				<div class="brdr-head mrgn-btm"><img src="images/brdr-heads.png" class="img-responsive" /></div>
-				<div class="row mrgn-nul">
-					<div class="col-sm-3 pad-nul">
-						<div class="zm-out">
-							<img src="images/talent-1.jpg" class="fl-wid" />
-							<div class="zm-out-cont">
-								<h3>LOREM</h3>
-								<p>lorem ipsum lorem</p>
+				<div class="recruiter-inner-container">
+					<h1 class="recruiter-hd">Latest Talent</h1>
+					<div class="brdr-head mrgn-btm"><img src="images/brdr-heads.png" class="img-responsive" /></div>
+					<div class="row mrgn-nul">
+						<div class="col-sm-3 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-1.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-2.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-3.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-4.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3 pad-nul">
-						<div class="zm-out">
-							<img src="images/talent-2.jpg" class="fl-wid" />
-							<div class="zm-out-cont">
-								<h3>LOREM</h3>
-								<p>lorem ipsum lorem</p>
+					<div class="row mrgn-nul">
+						<div class="col-sm-3 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-5.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-6.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-7.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-8.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-3 pad-nul">
-						<div class="zm-out">
-							<img src="images/talent-3.jpg" class="fl-wid" />
-							<div class="zm-out-cont">
-								<h3>LOREM</h3>
-								<p>lorem ipsum lorem</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 pad-nul">
-						<div class="zm-out">
-							<img src="images/talent-4.jpg" class="fl-wid" />
-							<div class="zm-out-cont">
-								<h3>LOREM</h3>
-								<p>lorem ipsum lorem</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row mrgn-nul">
-					<div class="col-sm-3 pad-nul">
-						<div class="zm-out">
-							<img src="images/talent-5.jpg" class="fl-wid" />
-							<div class="zm-out-cont">
-								<h3>LOREM</h3>
-								<p>lorem ipsum lorem</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 pad-nul">
-						<div class="zm-out">
-							<img src="images/talent-6.jpg" class="fl-wid" />
-							<div class="zm-out-cont">
-								<h3>LOREM</h3>
-								<p>lorem ipsum lorem</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 pad-nul">
-						<div class="zm-out">
-							<img src="images/talent-7.jpg" class="fl-wid" />
-							<div class="zm-out-cont">
-								<h3>LOREM</h3>
-								<p>lorem ipsum lorem</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3 pad-nul">
-						<div class="zm-out">
-							<img src="images/talent-8.jpg" class="fl-wid" />
-							<div class="zm-out-cont">
-								<h3>LOREM</h3>
-								<p>lorem ipsum lorem</p>
-							</div>
-						</div>
-					</div>
-				</div>.
+				</div><!-- recruiter-inner-container ends -->
 				<div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
 				<div class="brdr-head mrgn-btm"><img src="images/brdr-heads.png" class="img-responsive" /></div>
 			</div><!-- container -->
@@ -566,9 +711,9 @@
 								<li><a href="#">Lorem</a></li>
 								<li><a href="#">Lorem</a></li>
 								<li><a href="#">Lorem</a></li>
-								<li><a href="#">Lorem</a></li>
-								<li><a href="#">Lorem</a></li>
 							</ul>
+							
+							<div class="fb-like-box" data-height="200" data-href="https://www.facebook.com/FacebookDevelopers" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -588,6 +733,14 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/skrollr.js"></script>
+		<script src="js/okvideo.js"></script>
 		<script src="js/custom.js"></script>
+		<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=485383234941891&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	</body>
 </html>
