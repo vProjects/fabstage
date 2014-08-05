@@ -87,14 +87,17 @@
 					      </div>
 					      <div class="modal-footer">
 					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					        <button type="button" class="btn btn-primary">Save changes</button>
+					        <button type="button" class="btn btn-danger">Save changes</button>
 					      </div>
 					    </div>
 					  </div>
 					</div>
 		
 		<section class="banner">
-			
+			<div class="play-pause-btn">
+				<button class="command btn btn-danger" onclick="jQuery('#bgndVideo').playYTP()"><img src="images/play.png" /></button>
+        		<button class="command btn btn-danger" onclick="jQuery('#bgndVideo').pauseYTP()"><img src="images/pause.png" /></button>
+        	</div>
 			<h3 class="head-banner">Find talent , agencies or jobs</h3>
 			<div class="brdr-banner">
 				<img src="images/brdr-banner.jpg" class="img-responsive" />
@@ -573,19 +576,21 @@
 			<div class="container">
 				<h1 class="recruiter-hd">Latest Jobs and Auditions</h1>
 				<div class="brdr-head mrgn-btm"><img src="images/brdr-heads.png" class="img-responsive" /></div>
-				<h1 class="recruiter-hd">lorem ipsum lorem ipsum lorem</h1>
-				<p class="recruiter-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 				<div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
 				  
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner">
 				    <div class="item active">
+				    	<h1 class="recruiter-hd">lorem ipsum lorem ipsum lorem</h1>
+						<p class="recruiter-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 				      <div class="sld-recruiter"><img src="images/girl-1.jpg" class="fl-wid img-circle brdr-recruiter" /></div>
 				      <h3 class="hd-carousel-recruiter">lorem ipsum</h3>
 				      <p class="para-carousel-recruiter">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 				      <div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
 				    </div>
 				    <div class="item">
+				    	<h1 class="recruiter-hd">lorem ipsum lorem ipsum lorem</h1>
+						<p class="recruiter-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 				      <div class="sld-recruiter"><img src="images/girl-1.jpg" class="fl-wid img-circle brdr-recruiter" /></div>
 				      <h3 class="hd-carousel-recruiter">lorem ipsum</h3>
 				      <p class="para-carousel-recruiter">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
@@ -694,10 +699,9 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-2">
+					<div class="col-sm-4">
 						<p class="copyright">Copyright xyz</p>
-					</div>
-					<div class="col-sm-3">
+					
 						<form role="form">
 							<div class="input-group input-group-custom">
 								<input class="form-control form-custom" type="text" placeholder="Newsletter" />
@@ -705,7 +709,7 @@
 							</div>
 						</form>
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-2 pad-nul">
 						<div class="nav-footer">
 							<ul>
 								<li><a href="#">Lorem</a></li>
@@ -713,9 +717,11 @@
 								<li><a href="#">Lorem</a></li>
 							</ul>
 							
-							<div class="fb-like-box" data-height="200" data-href="https://www.facebook.com/FacebookDevelopers" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
 						</div>
 						<div class="clearfix"></div>
+					</div>
+					<div class="col-sm-4 pad-nul">
+							<div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-height="200" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="true"></div>
 					</div>
 					<div class="col-sm-2">
 						<div class="social">
@@ -729,13 +735,14 @@
 			</div>
 		</footer>
 		
+		<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=CBmxl09gPRs',containment:'body', showControls:true, autoPlay:true, loop:true, vol:50, mute:false, startAt:1, opacity:1, addRaster:false, quality:'default'}">My video</a> <!--BsekcY04xvQ-->
 		<!-- link js -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/skrollr.js"></script>
-		<script src="js/okvideo.js"></script>
+		<script src="js/jquery.mb.YTPlayer.js"></script>
 		<script src="js/custom.js"></script>
-		<script>(function(d, s, id) {
+<script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;

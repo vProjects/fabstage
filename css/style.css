@@ -810,6 +810,8 @@
 	font-size: 1.3em;
 	margin-top: 25px;
 	margin-bottom: 25px;
+	width: 35%;
+	float: left;
 }
 
 footer{
@@ -818,6 +820,8 @@ footer{
 
 .input-group-custom{
 	margin-top: 20px;
+	width: 65%;
+	float: left;
 }
 
 .form-custom:focus{
@@ -847,7 +851,7 @@ footer{
 
 .nav-footer{
 	
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 25px;
     position: relative;
@@ -1040,3 +1044,21 @@ footer{
 	display: none !important;
 }
 
+#okplayer{
+	z-index: -99 !important;
+}
+
+.play-pause-btn{
+	width: 120px;
+	margin: 0 auto;
+}
+
+.play-pause-btn>button{
+	width: 40px;
+	margin: 10px;
+	float: left;
+}
+
+.play-pause-btn>button>img{
+	width: 100%;
+}
