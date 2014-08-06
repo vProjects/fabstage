@@ -178,6 +178,7 @@
 	position: relative;
 	min-width: 100%;
 	min-height: 100%;
+	background-color: rgba(0,0,0,0.4);
 	padding-top: 15%;
 }
 
@@ -1061,4 +1062,13 @@ footer{
 
 .play-pause-btn>button>img{
 	width: 100%;
+}
+
+#wrapper_mbYTP_bgndVideo{
+	background-color: #B8B8B8;
+}
+
+.fb-sec{
+	width: 200px;
+	margin: 0 auto;
 }
