@@ -21,7 +21,14 @@
 		<title>Fabstage</title>
 	</head>
 	<body>
-		
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=485383234941891&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 		<!-- navigation menu -->
 		
 		<nav class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
@@ -94,22 +101,20 @@
 					</div>
 		
 		<section class="banner">
-			<div class="play-pause-btn">
-				<button class="command btn btn-danger" onclick="jQuery('#bgndVideo').playYTP()"><img src="images/play.png" /></button>
-        		<button class="command btn btn-danger" onclick="jQuery('#bgndVideo').pauseYTP()"><img src="images/pause.png" /></button>
-        	</div>
+			
 			<h3 class="head-banner">Find talent , agencies or jobs</h3>
 			<div class="brdr-banner">
 				<img src="images/brdr-banner.jpg" class="img-responsive" />
 			</div>
 			<p class="para-banner">Hire Professionals and Find jobs and auditions in Entertainment &amp; Glamoure world hire</p>
-			<div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
-		</section>
-		
-		<!-- first link and input section -->
-		
-		<section class="bd-frst">
-			<div class="container">
+			<div class="cl-effect-5"><a href="#" class="lnk-carousel"><span data-hover="More">More</span></a></div>
+			<div class="play-pause-btn">
+				<div class="dsply-inline-pl-pause">
+					<button class="command btn btn-danger" id="play-btn" onclick="jQuery('#bgndVideo').playYTP()"><img src="images/play.png" /></button>
+        			<button class="command btn btn-danger" id="pause-btn" onclick="jQuery('#bgndVideo').pauseYTP()"><img src="images/pause.png" /></button>
+				</div>
+        	</div>
+        	<div class="container">
 				<h3 class="head-bd">lorem ipsum lorem</h3>
 				<div class="brdr-head"><img src="images/brdr-heads.png" class="img-responsive" /></div>
 				<div class="middle-lnk mrgn-btm">
@@ -139,8 +144,10 @@
 						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
 						    </div>
 						  </div>
-						  <div class="fl-wid mrgn-tp">
-						  	<div class="btn-custom-div"><button class="btn btn-default"><img src="images/searchicon.png" /></button></div>
+						  <div class="form-group">
+						    <div class="input-group">
+						      <button class="btn btn-default mrgn-lt-btn"><img src="images/searchicon.png" /></button>
+						    </div>
 						  </div>
 						</form>
 					  </div>
@@ -160,8 +167,10 @@
 						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
 						    </div>
 						  </div>
-						  <div class="fl-wid mrgn-tp">
-						  	<div class="btn-custom-div"><button class="btn btn-default"><img src="images/searchicon.png" /></button></div>
+						  <div class="form-group">
+						    <div class="input-group">
+						      <button class="btn btn-default mrgn-lt-btn"><img src="images/searchicon.png" /></button>
+						    </div>
 						  </div>
 						</form>
 					  </div>
@@ -181,8 +190,10 @@
 						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
 						    </div>
 						  </div>
-						  <div class="fl-wid mrgn-tp">
-						  	<div class="btn-custom-div"><button class="btn btn-default"><img src="images/searchicon.png" /></button></div>
+						  <div class="form-group">
+						    <div class="input-group">
+						      <button class="btn btn-default mrgn-lt-btn"><img src="images/searchicon.png" /></button>
+						    </div>
 						  </div>
 						</form>
 					  </div>
@@ -202,8 +213,10 @@
 						      <input class="form-control form-custom-need" type="text" placeholder="Which Location?">
 						    </div>
 						  </div>
-						  <div class="fl-wid mrgn-tp">
-						  	<div class="btn-custom-div"><button class="btn btn-default"><img src="images/searchicon.png" /></button></div>
+						  <div class="form-group">
+						    <div class="input-group">
+						      <button class="btn btn-default mrgn-lt-btn"><img src="images/searchicon.png" /></button>
+						    </div>
 						  </div>
 						</form>
 					  </div>
@@ -219,7 +232,7 @@
 		
 		<section class="bd-scnd">
 			
-				<h3 class="head-bd">lorem ipsum lorem</h3>
+				<h3 class="head-bd black-txt">lorem ipsum lorem</h3>
 				<div class="brdr-head"><img src="images/brdr-heads.png" class="img-responsive" /></div>
 				
 				<div id="carousel-example-3rd" class="carousel slide" data-ride="carousel">
@@ -296,7 +309,7 @@
 							</div>
 						</div>
 					</div><!-- row ends -->
-					<div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
+					<div class="cl-effect-5"><a href="#" class="lnk-carousel"><span data-hover="More">More</span></a></div>
 					</div>
 				    </div>
 				    <div class="item">
@@ -369,7 +382,7 @@
 							</div>
 						</div>
 					</div><!-- row ends -->
-					<div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
+					<div class="cl-effect-5"><a href="#" class="lnk-carousel"><span data-hover="More">More</span></a></div>
 					</div><!-- container -->
 				    </div>
 				  </div>
@@ -479,8 +492,8 @@
 				      
 								<div class="row mrgn-tp mrgn-btm">
 									<div class="col-sm-3">
-										<div class="effctimg img-circle">
-											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+										<div class="effctimg">
+											<img src="images/girl-1.jpg" class="fl-wid" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -488,8 +501,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg img-circle">
-											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+										<div class="effctimg">
+											<img src="images/girl-1.jpg" class="fl-wid" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -497,8 +510,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg img-circle">
-											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+										<div class="effctimg">
+											<img src="images/girl-1.jpg" class="fl-wid" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -506,8 +519,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg img-circle">
-											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+										<div class="effctimg">
+											<img src="images/girl-1.jpg" class="fl-wid" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -521,8 +534,8 @@
 				     
 								<div class="row mrgn-tp mrgn-btm">
 									<div class="col-sm-3">
-										<div class="effctimg img-circle">
-											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+										<div class="effctimg">
+											<img src="images/girl-1.jpg" class="fl-wid" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -530,8 +543,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg img-circle">
-											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+										<div class="effctimg">
+											<img src="images/girl-1.jpg" class="fl-wid" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -539,8 +552,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg img-circle">
-											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+										<div class="effctimg">
+											<img src="images/girl-1.jpg" class="fl-wid" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -548,8 +561,8 @@
 										</div>
 									</div>
 									<div class="col-sm-3">
-										<div class="effctimg img-circle">
-											<img src="images/girl-1.jpg" class="fl-wid img-circle" />
+										<div class="effctimg">
+											<img src="images/girl-1.jpg" class="fl-wid" />
 											<div class="txt-container">
 												<p>Financer needed</p>
 												<a href="#" class="jb-view">View</a>
@@ -586,7 +599,7 @@
 				      <div class="sld-recruiter"><img src="images/girl-1.jpg" class="fl-wid img-circle brdr-recruiter" /></div>
 				      <h3 class="hd-carousel-recruiter">lorem ipsum</h3>
 				      <p class="para-carousel-recruiter">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-				      <div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
+				      <div class="cl-effect-5"><a href="#" class="lnk-carousel"><span data-hover="More">More</span></a></div>
 				    </div>
 				    <div class="item">
 				    	<h1 class="recruiter-hd">lorem ipsum lorem ipsum lorem</h1>
@@ -594,7 +607,7 @@
 				      <div class="sld-recruiter"><img src="images/girl-1.jpg" class="fl-wid img-circle brdr-recruiter" /></div>
 				      <h3 class="hd-carousel-recruiter">lorem ipsum</h3>
 				      <p class="para-carousel-recruiter">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
-				      <div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
+				      <div class="cl-effect-5"><a href="#" class="lnk-carousel"><span data-hover="More">More</span></a></div>
 				    </div>
 				  </div>
 				
@@ -610,12 +623,11 @@
 		</section>
 		
 		<section class="recruiter">
-			<div class="container">
 				<div class="recruiter-inner-container">
 					<h1 class="recruiter-hd">Latest Talent</h1>
 					<div class="brdr-head mrgn-btm"><img src="images/brdr-heads.png" class="img-responsive" /></div>
 					<div class="row mrgn-nul">
-						<div class="col-sm-3 pad-nul">
+						<div class="col-sm-2 pad-nul">
 							<div class="zm-out">
 								<img src="images/talent-1.jpg" class="fl-wid" />
 								<div class="zm-out-cont">
@@ -624,7 +636,25 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 pad-nul">
+						<div class="col-sm-2 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-1.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-1.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2 pad-nul">
 							<div class="zm-out">
 								<img src="images/talent-2.jpg" class="fl-wid" />
 								<div class="zm-out-cont">
@@ -633,7 +663,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 pad-nul">
+						<div class="col-sm-2 pad-nul">
 							<div class="zm-out">
 								<img src="images/talent-3.jpg" class="fl-wid" />
 								<div class="zm-out-cont">
@@ -642,7 +672,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 pad-nul">
+						<div class="col-sm-2 pad-nul">
 							<div class="zm-out">
 								<img src="images/talent-4.jpg" class="fl-wid" />
 								<div class="zm-out-cont">
@@ -653,7 +683,7 @@
 						</div>
 					</div>
 					<div class="row mrgn-nul">
-						<div class="col-sm-3 pad-nul">
+						<div class="col-sm-2 pad-nul">
 							<div class="zm-out">
 								<img src="images/talent-5.jpg" class="fl-wid" />
 								<div class="zm-out-cont">
@@ -662,7 +692,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 pad-nul">
+						<div class="col-sm-2 pad-nul">
 							<div class="zm-out">
 								<img src="images/talent-6.jpg" class="fl-wid" />
 								<div class="zm-out-cont">
@@ -671,7 +701,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 pad-nul">
+						<div class="col-sm-2 pad-nul">
 							<div class="zm-out">
 								<img src="images/talent-7.jpg" class="fl-wid" />
 								<div class="zm-out-cont">
@@ -680,7 +710,25 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-3 pad-nul">
+						<div class="col-sm-2 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-1.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2 pad-nul">
+							<div class="zm-out">
+								<img src="images/talent-1.jpg" class="fl-wid" />
+								<div class="zm-out-cont">
+									<h3>LOREM</h3>
+									<p>lorem ipsum lorem</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-2 pad-nul">
 							<div class="zm-out">
 								<img src="images/talent-8.jpg" class="fl-wid" />
 								<div class="zm-out-cont">
@@ -691,10 +739,9 @@
 						</div>
 					</div>
 				</div><!-- recruiter-inner-container ends -->
-				<div class="cl-effect-21"><a href="#" class="lnk-carousel">More</a></div>
+				<div class="cl-effect-5"><a href="#" class="lnk-carousel"><span data-hover="More">More</span></a></div>
 				<div class="brdr-head mrgn-btm"><img src="images/brdr-heads.png" class="img-responsive" /></div>
-			</div><!-- container -->
-		</section>
+			</section>
 		
 		<footer>
 			<div class="container">
@@ -709,9 +756,11 @@
 							</div>
 						</form>
 					</div>
-					<div class="col-sm-2 pad-nul">
+					<div class="col-sm-4 col-sm-offset-1 pad-nul">
 						<div class="nav-footer">
 							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
 								<li><a href="#">Lorem</a></li>
 								<li><a href="#">Lorem</a></li>
 								<li><a href="#">Lorem</a></li>
@@ -719,11 +768,6 @@
 							
 						</div>
 						<div class="clearfix"></div>
-					</div>
-					<div class="col-sm-4 pad-nul">
-							<div class="fb-sec">
-								<div class="fb-facepile" data-href="https://www.facebook.com/FacebookDevelopers" data-width="200" data-max-rows="1" data-colorscheme="dark" data-size="medium" data-show-count="true"></div>
-							</div>
 					</div>
 					<div class="col-sm-2">
 						<div class="social">
@@ -737,19 +781,13 @@
 			</div>
 		</footer>
 		
-		<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Q-GLuydiMe4',containment:'body', showControls:true, autoPlay:true, loop:true, vol:50, mute:false, startAt:1, opacity:1, addRaster:false, quality:'hd720'}">My video</a> <!--BsekcY04xvQ-->
+		<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=mlFKVdDIR5Q',containment:'body', showControls:true, autoPlay:true, loop:true, vol:50, mute:false, startAt:1, opacity:1, addRaster:false, quality:'default'}">My video</a> <!--BsekcY04xvQ-->
 		<!-- link js -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/skrollr.js"></script>
 		<script src="js/jquery.mb.YTPlayer.js"></script>
 		<script src="js/custom.js"></script>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=485383234941891&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 	</body>
 </html>
